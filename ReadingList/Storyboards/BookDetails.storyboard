@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n9u-1T-KRj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n9u-1T-KRj">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -728,27 +728,33 @@
                                                                                             </imageView>
                                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating-star-filled" translatesAutoresizingMaskIntoConstraints="NO" id="N5v-cc-zkB" userLabel="star2">
                                                                                                 <rect key="frame" x="16" y="0.0" width="16" height="16"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="width" constant="16" id="3fr-bg-7qf"/>
+                                                                                                    <constraint firstAttribute="height" constant="16" id="cau-NN-e5p"/>
+                                                                                                </constraints>
                                                                                             </imageView>
                                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating-star-filled" translatesAutoresizingMaskIntoConstraints="NO" id="AHh-hD-Uqv" userLabel="star3">
                                                                                                 <rect key="frame" x="32.000000000000014" y="0.0" width="16" height="16"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="width" constant="16" id="4bT-rw-LeB"/>
+                                                                                                    <constraint firstAttribute="height" constant="16" id="Rsf-0T-nUd"/>
+                                                                                                </constraints>
                                                                                             </imageView>
                                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating-star-filled" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-AW-a0h" userLabel="star4">
                                                                                                 <rect key="frame" x="48.000000000000014" y="0.0" width="16" height="16"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="height" constant="16" id="KPi-JE-vvk"/>
+                                                                                                    <constraint firstAttribute="width" constant="16" id="TUC-ye-33z"/>
+                                                                                                </constraints>
                                                                                             </imageView>
                                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating-star-filled" translatesAutoresizingMaskIntoConstraints="NO" id="otS-1O-fcR" userLabel="star5">
                                                                                                 <rect key="frame" x="64.000000000000014" y="0.0" width="16" height="16"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="height" constant="16" id="9zh-Et-3SQ"/>
+                                                                                                    <constraint firstAttribute="width" constant="16" id="ysZ-mM-Yh7"/>
+                                                                                                </constraints>
                                                                                             </imageView>
                                                                                         </subviews>
-                                                                                        <constraints>
-                                                                                            <constraint firstItem="otS-1O-fcR" firstAttribute="height" secondItem="22Q-dy-PQB" secondAttribute="height" id="RrK-va-f9X"/>
-                                                                                            <constraint firstItem="Nnp-AW-a0h" firstAttribute="height" secondItem="22Q-dy-PQB" secondAttribute="height" id="S7W-Fb-kms"/>
-                                                                                            <constraint firstItem="N5v-cc-zkB" firstAttribute="height" secondItem="22Q-dy-PQB" secondAttribute="height" id="T5e-yu-XAR"/>
-                                                                                            <constraint firstItem="Nnp-AW-a0h" firstAttribute="width" secondItem="22Q-dy-PQB" secondAttribute="width" id="Vki-UO-45k"/>
-                                                                                            <constraint firstItem="AHh-hD-Uqv" firstAttribute="width" secondItem="22Q-dy-PQB" secondAttribute="width" id="fcQ-2G-Xe0"/>
-                                                                                            <constraint firstItem="N5v-cc-zkB" firstAttribute="width" secondItem="22Q-dy-PQB" secondAttribute="width" id="mM5-4W-ppZ"/>
-                                                                                            <constraint firstItem="otS-1O-fcR" firstAttribute="width" secondItem="22Q-dy-PQB" secondAttribute="width" id="oKX-tZ-1C7"/>
-                                                                                            <constraint firstItem="AHh-hD-Uqv" firstAttribute="height" secondItem="22Q-dy-PQB" secondAttribute="height" id="vN7-lI-Khq"/>
-                                                                                        </constraints>
                                                                                     </stackView>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFY-DC-R0j" userLabel="RatingSpacingView">
                                                                                         <rect key="frame" x="168.33333333333337" y="0.0" width="193.66666666666663" height="20"/>
