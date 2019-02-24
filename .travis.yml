@@ -21,4 +21,4 @@ deploy:
   script:
     - bundle exec fastlane upload_build
   on:
-    branch: master
+    #branch: master
