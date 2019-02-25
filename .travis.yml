@@ -20,3 +20,5 @@ deploy:
   provider: script
   script:
     - bundle exec fastlane upload_build
+  on:
+    branch: ios10-patch
