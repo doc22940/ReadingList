@@ -12,7 +12,7 @@ platform :ios do
 
   lane :ci do
     # testing is failing on Xcode 11 with an error about no suitable libswiftUIKit.dylib...
-    #test
+    test
     configure_keychain
     build_app(workspace: "ReadingList.xcworkspace", scheme: "ReadingList")
   end

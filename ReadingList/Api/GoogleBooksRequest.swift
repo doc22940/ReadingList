@@ -33,7 +33,7 @@ enum GoogleBooksRequest {
 
     private static let searchResultFields = "items(id,volumeInfo(title,subtitle,authors,industryIdentifiers,categories,imageLinks/thumbnail))"
 
-    private var baseUrl: URL {
+    var baseUrl: URL {
         switch self {
         case .coverImage, .webpage:
             return GoogleBooksRequest.googleBooksBaseUrl
@@ -42,7 +42,7 @@ enum GoogleBooksRequest {
         }
     }
 
-    private var path: String {
+    var path: String {
         switch self {
         case .searchIsbn, .searchText:
             return "books/v1/volumes"
@@ -55,7 +55,7 @@ enum GoogleBooksRequest {
         }
     }
 
-    private var queryString: String? {
+    var queryString: String? {
         switch self {
         case let .searchText(searchString, languageRestriction):
             let encodedQuery = searchString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
@@ -77,7 +77,7 @@ enum GoogleBooksRequest {
         }
     }
 
-    private var pathAndQuery: String {
+    var pathAndQuery: String {
         if let queryString = queryString {
             return "\(path)?\(queryString)"
         } else {
